@@ -23,6 +23,6 @@ public class AccountsController {
         this.accountService.createAccount(customerDto);
         return ResponseEntity
                 .status(HttpStatus.CREATED)
-                .body(new ResponseDto(AccountConstants.STATUS_200, AccountConstants.MESSAGE_201));
+                .body(new ResponseDto(AccountConstants.STATUS_201, AccountConstants.MESSAGE_201));
     }
 }
